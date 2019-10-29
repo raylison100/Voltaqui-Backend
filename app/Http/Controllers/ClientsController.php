@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Traits\CrudMethods;
 
+use App\Services\ClientService;
 use App\Validators\ClientValidator;
 
 /**

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Traits\CrudMethods;
 
+use App\Services\PreferenceService;
 use App\Validators\PreferenceValidator;
 
 /**

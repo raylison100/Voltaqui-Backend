@@ -3,14 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Traits\CrudMethods;
-use Illuminate\Http\Request;
 
-use App\Http\Requests;
-use Prettus\Validator\Contracts\ValidatorInterface;
-use Prettus\Validator\Exceptions\ValidatorException;
-use App\Http\Requests\VisitsCreateRequest;
-use App\Http\Requests\VisitsUpdateRequest;
-use App\Repositories\VisitsRepository;
+use App\Services\VisitService;
 use App\Validators\VisitsValidator;
 
 /**

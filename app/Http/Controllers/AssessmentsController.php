@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Traits\CrudMethods;
-use App\Validators\AssessmentsValidator;
 
+use App\Services\AssessmentService;
+use App\Validators\AssessmentsValidator;
 
 /**
  * Class AssessmentsController.
