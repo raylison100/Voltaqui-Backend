@@ -20,6 +20,13 @@ class Restaurant extends Model implements Transformable
      *
      * @var array
      */
-    protected $fillable = [];
+    protected $fillable = [
+        'id', 'nome', 'email', 'partner', 'note', 'deleted_at', 'created_at', 'updated_at'
+    ];
 
+    protected $hidden = [
+        'password',
+    ];
+
+    protected $dates = ['created_at', 'updated_at','deleted_at'];
 }

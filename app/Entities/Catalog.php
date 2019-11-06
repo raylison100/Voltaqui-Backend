@@ -20,6 +20,7 @@ class Catalog extends Model implements Transformable
      *
      * @var array
      */
-    protected $fillable = [];
+    protected $fillable = ['id', 'restaurant_id', 'image'];
 
+    protected $dates = ['created_at', 'updated_at'];
 }

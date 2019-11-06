@@ -22,12 +22,13 @@ class CommentsTransformer extends TransformerAbstract
     public function transform(Comment $model)
     {
         return [
-            'id'         => (int) $model->id,
-
-            /* place your other model properties here */
-
-            'created_at' => $model->created_at,
-            'updated_at' => $model->updated_at
+            'id'                => (int) $model->id,
+            'assessment_id'     => $model->assessment_id,
+            'message'           => $model->message,
+            'restaurant_id'     => $model->restaurant_id,
+            'client_id'         => $model->client_id,
+            'created_at'        => $model->created_at,
+            'updated_at'        => $model->updated_at
         ];
     }
 }

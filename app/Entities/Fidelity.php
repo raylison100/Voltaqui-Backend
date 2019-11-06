@@ -20,6 +20,9 @@ class Fidelity extends Model implements Transformable
      *
      * @var array
      */
-    protected $fillable = [];
+    protected $fillable = [
+        'id', 'client_id', 'num_visits', 'win'
+    ];
 
+    protected $dates = ['created_at', 'updated_at'];
 }

@@ -20,6 +20,9 @@ class Preference extends Model implements Transformable
      *
      * @var array
      */
-    protected $fillable = [];
+    protected $fillable = [
+        'id', 'client_id', 'restaurant_id'
+    ];
 
+    protected $dates = ['created_at', 'updated_at'];
 }

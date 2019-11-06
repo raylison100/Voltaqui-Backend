@@ -22,12 +22,11 @@ class CatalogsTransformer extends TransformerAbstract
     public function transform(Catalog $model)
     {
         return [
-            'id'         => (int) $model->id,
-
-            /* place your other model properties here */
-
-            'created_at' => $model->created_at,
-            'updated_at' => $model->updated_at
+            'id'                => (int) $model->id,
+            'restaurant_id'     => $model->restaurant_id,
+            'image'             => $model->image,
+            'created_at'        => $model->created_at,
+            'updated_at'        => $model->updated_at
         ];
     }
 }

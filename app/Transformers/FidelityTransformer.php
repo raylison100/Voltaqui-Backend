@@ -22,12 +22,12 @@ class FidelityTransformer extends TransformerAbstract
     public function transform(Fidelity $model)
     {
         return [
-            'id'         => (int) $model->id,
-
-            /* place your other model properties here */
-
-            'created_at' => $model->created_at,
-            'updated_at' => $model->updated_at
+            'id'            => (int) $model->id,
+            'client_id'     => $model->client_id,
+            'num_visits'    => $model->num_visits,
+            'win'           => $model->win,
+            'created_at'    => $model->created_at,
+            'updated_at'    => $model->updated_at
         ];
     }
 }

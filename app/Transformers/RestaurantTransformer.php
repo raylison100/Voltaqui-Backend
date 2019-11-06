@@ -22,12 +22,13 @@ class RestaurantTransformer extends TransformerAbstract
     public function transform(Restaurant $model)
     {
         return [
-            'id'         => (int) $model->id,
-
-            /* place your other model properties here */
-
-            'created_at' => $model->created_at,
-            'updated_at' => $model->updated_at
+            'id'            => (int) $model->id,
+            'nome'          => $model->nome,
+            'email'         => $model->email,
+            'partner'       => $model->partner,
+            'note'          => $model->note,
+            'created_at'    => $model->created_at,
+            'updated_at'    => $model->updated_at
         ];
     }
 }

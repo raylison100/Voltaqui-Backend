@@ -20,6 +20,9 @@ class Assessment extends Model implements Transformable
      *
      * @var array
      */
-    protected $fillable = [];
+    protected $fillable = [
+        'id', 'note', 'restaurant_id', 'client_id'
+    ];
 
+    protected $dates = ['created_at', 'updated_at'];
 }
