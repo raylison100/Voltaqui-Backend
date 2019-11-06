@@ -25,4 +25,14 @@ class Preference extends Model implements Transformable
     ];
 
     protected $dates = ['created_at', 'updated_at'];
+
+    public function clients()
+    {
+        return $this->belongsTo(Client::class);
+    }
+
+    public function restaurants()
+    {
+        return $this->belongsTo(Restaurant::class);
+    }
 }

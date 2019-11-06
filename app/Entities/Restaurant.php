@@ -29,4 +29,29 @@ class Restaurant extends Model implements Transformable
     ];
 
     protected $dates = ['created_at', 'updated_at','deleted_at'];
+
+    public function preferences()
+    {
+        return $this->hasMany(Preference::class);
+    }
+
+    public function visits()
+    {
+        return $this->hasMany(Visit::class);
+    }
+
+    public function Catalogs()
+    {
+        return $this->hasMany(Catalog::class);
+    }
+
+    public function asseessments()
+    {
+        return $this->hasMany(Assessment::class);
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
 }

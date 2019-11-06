@@ -25,4 +25,19 @@ class Assessment extends Model implements Transformable
     ];
 
     protected $dates = ['created_at', 'updated_at'];
+
+    public function restaurant()
+    {
+        return $this->belongsTo(Restaurant::class);
+    }
+
+    public function client()
+    {
+        return $this->belongsTo(Client::class);
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
 }

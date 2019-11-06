@@ -23,4 +23,9 @@ class Catalog extends Model implements Transformable
     protected $fillable = ['id', 'restaurant_id', 'image'];
 
     protected $dates = ['created_at', 'updated_at'];
+
+    public function restaurants()
+    {
+        return $this->belongsTo(Restaurant::class);
+    }
 }
