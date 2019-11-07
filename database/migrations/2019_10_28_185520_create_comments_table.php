@@ -28,7 +28,7 @@ class CreateCommentsTable extends Migration
             $table->foreign('client_id')
                 ->references('id')->on('clients');
             $table->foreign('assessment_id')
-                ->references('id')->on('assessments')->onDelete('cascade');
+                ->references('id')->on('assessments');
 		});
 	}
 

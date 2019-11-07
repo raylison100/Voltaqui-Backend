@@ -24,7 +24,8 @@ class CreateFidelitiesTable extends Migration
             $table->timestamps();
 
             $table->foreign('client_id')
-                ->references('id')->on('clients');
+                ->references('id')->on('clients')
+                ->onDelete('cascade');
 		});
 	}
 

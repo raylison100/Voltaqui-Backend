@@ -21,7 +21,7 @@ class Restaurant extends Model implements Transformable
      * @var array
      */
     protected $fillable = [
-        'id', 'nome', 'email', 'partner', 'note', 'deleted_at', 'created_at', 'updated_at'
+        'id', 'name', 'email', 'partner', 'note', 'deleted_at', 'created_at', 'updated_at'
     ];
 
     protected $hidden = [

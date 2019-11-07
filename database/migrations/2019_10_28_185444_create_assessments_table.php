@@ -23,9 +23,11 @@ class CreateAssessmentsTable extends Migration
 
             $table->timestamps();
             $table->foreign('restaurant_id')
-                ->references('id')->on('restaurants');
+                ->references('id')->on('restaurants')
+                ->onDelete('cascade');;
             $table->foreign('client_id')
-                ->references('id')->on('clients');
+                ->references('id')->on('clients')
+                ->onDelete('cascade');;
 		});
 	}
 

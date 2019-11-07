@@ -17,7 +17,7 @@ class CreateRestaurantsTable extends Migration
 	{
 		Schema::create('restaurants', function(Blueprint $table) {
             $table->increments('id');
-            $table->string("nome");
+            $table->string("name");
             $table->string("email")->unique();
             $table->string("password");
             $table->boolean("partner");

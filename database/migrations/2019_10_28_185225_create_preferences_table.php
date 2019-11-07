@@ -27,7 +27,8 @@ class CreatePreferencesTable extends Migration
                 ->onDelete('cascade');
 
             $table->foreign('restaurant_id')
-                ->references('id')->on('restaurants');
+                ->references('id')->on('restaurants')
+                ->onDelete('cascade');
 		});
 	}
 

@@ -21,7 +21,7 @@ class Client extends Model implements Transformable
      * @var array
      */
     protected $fillable = [
-        'id', 'phoneNumber', 'nome', 'email'
+        'id', 'phoneNumber', 'name', 'email'
     ];
 
     protected $dates = ['created_at', 'updated_at','deleted_at'];
